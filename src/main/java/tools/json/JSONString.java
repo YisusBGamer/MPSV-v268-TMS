@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package tools.json;
+
+interface JSONString {
+    public String toJSONString();
+}
+

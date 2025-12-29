@@ -1,0 +1,52 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package Net.server.maps;
+
+public enum FieldLimitType {
+    MOVELIMIT(1),
+    SKILLLIMIT(2),
+    SUMMONLIMIT(4),
+    MYSTICDOORLIMIT(8),
+    MIGRATELIMIT(16),
+    PORTALSCROLLLIMIT(32),
+    TELEPORTITEMLIMIT(64),
+    MINIGAMELIMIT(128),
+    SPECIFICPORTALSCROLLLIMIT(256),
+    TAMINGMOBLIMIT(512),
+    STATCHANGEITEMCONSUMELIMIT(1024),
+    PARTYBOSSCHANGELIMIT(2048),
+    NOMOBCAPACITYLIMIT(4096),
+    WEDDINGINVITATIONLIMIT(8192),
+    CASHWEATHERCONSUMELIMIT(16384),
+    NOPET(32768),
+    ANTIMACROLIMIT(65536),
+    FALLDOWNLIMIT(131072),
+    SUMMONNPCLIMIT(262144),
+    NOEXPDECREASE(524288),
+    NODAMAGEONFALLING(0x100000),
+    PARCELOPENLIMIT(0x200000),
+    DROPLIMIT(0x400000),
+    ROCKETBOOSTER_LIMIT(0x800000),
+    ITEMOPTIONLIMIT(0x1000000),
+    NOQUESTALERTLIMIT(0x2000000),
+    NOANDROID(0x4000000),
+    AUTO_EXPAND_MINIMAP(0x8000000),
+    MOVESKILLONLY(0x10000000),
+    ONLYSTARPLANETPET(0x20000000);
+
+    private final int i;
+
+    private FieldLimitType(int i) {
+        this.i = i;
+    }
+
+    public int getValue() {
+        return this.i;
+    }
+
+    public boolean check(int fieldlimit) {
+        return (fieldlimit & this.i) == this.i;
+    }
+}
+

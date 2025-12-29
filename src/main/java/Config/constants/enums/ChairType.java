@@ -1,0 +1,41 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package Config.constants.enums;
+
+public enum ChairType {
+    NORMAL,
+    TOWER,
+    MESO,
+    TEXT,
+    LV,
+    POP,
+    TIME,
+    STARFORCE,
+    RANDOM,
+    MIRROR,
+    ANDROID,
+    ROTATED_SLEEPING_BAG_CHAIR,
+    EVENT_POINT,
+    EVENT_POINT_GENDERLY,
+    EVENT_POINT_CLONE,
+    YETI,
+    MAPLE_GLOBE,
+    TRICK_OR_TREAT,
+    CELEBRATE,
+    IDENTITY,
+    POP_BUTTON,
+    ROLLING_HOUSE,
+    MANNEQUIN,
+    PET,
+    SCORE,
+    SCALE_AVATAR,
+    WASTE,
+    ROLLING_HOUSE_2019,
+    CHAR_LV,
+    HASH_TAG,
+    UN22,
+    TRAITS;
+
+}
+
