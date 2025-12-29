@@ -1,34 +1,35 @@
-## 説明
-1. 感恩網路上分享的267-268的代碼，看DB是赫茲大佬的數據，感謝赫茲大佬的分享！
-2. 只能用來部署單機，個人游玩使用。學習代碼開發、逆向學習等使用。因爲還有很多BUG，每個BUG都是學習的過程。
-3. 使用方法：把網上需要修改本地時間的TMS268的啓動器改爲使用本端源碼登錄。mainClass在Net.NetRun。
-4. 啓動方式查看TMS-245.類似的TMS245也是比較穩定了 
-5. 研究單機是一個漫長的過程。我也中途放棄的很多很多次、每次都是碰壁就放棄了。都是爲愛發電，所以感謝所有願意分享的朋友!
-6. **感覺還是魔森端比較完善。後續可能會把TMS245升上來。先研究TMS245**
+## Notes
 
+1. Grateful for the code for TMS267-268 shared online. The database appears to be data from Hertz, thank you for sharing!
 
+2. This is for single-player deployment only, for personal use and learning code development, reverse engineering, etc. There are still many bugs, and each bug is a learning opportunity.
 
-## 代碼説明
-1. 功能基本都是TMS268實現的，我只是把267更新到268而已。感謝作者。 
-2. TMS245魔森端有很大差異，修復程度沒有TMS245要完善。可以用來感受一下六轉技能的炫酷。
-3. 2025-12-23 完全更新為268版本，如果有BUG則原本就有，268整理過來的，很多都是反編譯拿到的啓動非常慢。整理起來也非常麻煩，一度想刪了不管了，耗費了非常多力氣對代碼優化整合。
-   請好好珍惜這份代碼，希望對你有幫助。有問題請提ISSUE
+3. Usage: Modify the TMS268 launcher (which requires local time modification) to use the local source code for login. The mainClass is in Net.NetRun.
 
+4. For startup methods, see TMS-245. TMS245 is also relatively stable.
 
+5. Researching single-player mode is a long process. I gave up many times, each time encountering obstacles. It's all out of passion, so thank you to all the friends who shared!
 
-## 調試
-1. 日志配置在logback.xml文件中。但是大部分都不是控制台調試。 
-2. System.setProperty("debug", "dev"); 會開啓打印日志。不需要可以關掉。
-3. MYSQL5.6 \ JDK 21
-4. 指令查看：scripts/commands/entry.js  !+對應指令使用
-例如刷道具 !item 2435719 999
+6. **I feel the MoSen client is more complete. I might upgrade TMS245 later.** First, let's study TMS245**
 
+## Code Explanation
 
+1. Most of the functionality is implemented using TMS268; I simply updated from 267 to 268. Thanks to the author.
 
-![](asset/hexa.png)
+2. There are significant differences between the TMS245 and TMS268 versions, and the code fixes are not as complete. It can be used to experience the coolness of sixth-tier skills.
 
+3. Completely updated to version 268 on 2025-12-23. If there are bugs, they were already there. This code was cleaned up from version 268, and many bugs were obtained through decompilation, resulting in very slow startup. Cleaning it up was also very troublesome; I even considered deleting it, but a lot of effort was spent optimizing and integrating the code.
 
-![](asset/hexa2.png)
+Please cherish this code; I hope it will be helpful to you. Please raise an issue if you have any questions.
 
+## Debugging
 
-![](asset/hexa3.png)
+1. Log configuration is in the logback.xml file. However, most debugging is not done via console.
+
+2. System.setProperty("debug", "dev"); will enable logging. You can turn it off if not needed.
+
+3. MySQL 5.6 / JDK 21
+
+4. Command view: scripts/commands/entry.js !+corresponding command
+
+For example, to farm items: !item 2435719 999
